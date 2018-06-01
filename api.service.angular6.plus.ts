@@ -1,10 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers, Request, RequestOptions, RequestMethod, Response } from '@angular/http';
 import { Observable } from 'rxjs'
-import 'rxjs/add/operator/map';
-import { map } from 'rxjs/operators';
-import { catchError } from 'rxjs/operators';
-import 'rxjs/add/observable/throw';
+import { filter, map, catchError } from 'rxjs/operators';
 
 import { environment } from '../../environments/environment'; 
 
